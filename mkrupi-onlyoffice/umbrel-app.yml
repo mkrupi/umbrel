@@ -3,3 +3,4 @@ id: mkrupi-onlyoffice
 name: onlyoffice
 category: mkrupistore
 port: 11985
+repo: https://github.com/ONLYOFFICE/DocumentServer
