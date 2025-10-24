@@ -1,14 +1,16 @@
+version: '3.7'
+
 services:
   app_proxy:
     environment:
-      APP_HOST: denny-siyuan_app_1
-      APP_PORT: 16806
+      APP_HOST: mkrupi-siyuan_app_1
+      APP_PORT: 6806
       PROXY_AUTH_ADD: "false"
 
   app:
-    image: b3log/siyuan:v3.3.5@sha256:ac4ef17209bd831565f25ea9a787315ad129dd8f40c115edbf32c629fe9679ae
+    image: b3log/siyuan:v3.1.28@sha256:69e167eff47566e6f69e717df37b282d62e979751e0301526c989cb32cb9c17b
     healthcheck:
-      test: ["CMD-SHELL", "nc -z 127.0.0.1 16806 || exit 1"]
+      test: ["CMD-SHELL", "nc -z 127.0.0.1 6806 || exit 1"]
       interval: 10s
       timeout: 5s
       retries: 3
