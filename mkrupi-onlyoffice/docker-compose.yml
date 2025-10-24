@@ -1,9 +1,4 @@
 services:
-  app_proxy:
-    environment:
-      APP_HOST: onlyoffice
-      APP_PORT: 3000
-
   app:
     image: onlyoffice/documentserver:latest
     container_name: onlyoffice-docs
@@ -11,7 +6,7 @@ services:
     stdin_open: true
     tty: true
     ports:
-      - 31985:80
+      - 11985:80
     volumes:
       - "${APP_DATA_DIR}/Docs/logs:/var/log/onlyoffice"
       - "${APP_DATA_DIR}/Docs/data:/var/www/onlyoffice/Data"
