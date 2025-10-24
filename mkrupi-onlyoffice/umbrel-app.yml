@@ -3,4 +3,4 @@ id: mkrupi-onlyoffice
 name: onlyoffice
 category: mkrupistore
 port: 11985
-icon: icon.svg
+icon: https://github.com/mkrupi/umbrel/blob/41a6a4e422bef59c7ce53003a939ed014390fd6d/mkrupi-onlyoffice/icon.svg
