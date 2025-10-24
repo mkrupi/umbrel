@@ -1,0 +1,25 @@
+version: '1.0'
+services:
+  app_proxy:
+    environment:
+      APP_HOST: onlyoffice
+      APP_PORT: 3000
+
+  app:
+    image: onlyoffice/documentserver:latest
+    container_name: onlyoffice-docs
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    ports:
+      - 31985:80
+    volumes:
+      - "${APP_DATA_DIR}/Docs/logs:/var/log/onlyoffice"
+      - "${APP_DATA_DIR}/Docs/data:/var/www/onlyoffice/Data"
+      - "${APP_DATA_DIR}/Docs/lib:/var/lib/onlyoffice"
+      - "${APP_DATA_DIR}/Docs/db:/var/lib/postgresql"
+    environment:
+      - JWT_ENABLED=true
+      - JWT_SECRET=b5GlQDw9yb2L1ez9
+      - JWT_HEADER=Authorization
+      - JWT_IN_BODY=true
