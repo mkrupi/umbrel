@@ -2,4 +2,4 @@ manifestVersion: 1
 id: mkrupi-onlyoffice
 name: onlyoffice
 category: mkrupistore
-port: 31985
+port: 11985
