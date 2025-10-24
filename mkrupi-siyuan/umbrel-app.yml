@@ -1,6 +1,7 @@
 manifestVersion: 1
 id: mkrupi-siyuan
 name: SiYuan
+version: "3.3.5"
 tagline: A privacy-first personal knowledge management system
 icon: https://raw.githubusercontent.com/mkrupi/umbrel/master/mkrupi-siyuan/icon.png
 category: files & productivity
