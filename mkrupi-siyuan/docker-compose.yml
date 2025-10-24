@@ -6,7 +6,7 @@ services:
       PROXY_AUTH_ADD: "false"
 
   app:
-    image: b3log/siyuan:latest
+    image: b3log/siyuan:v3.3.5@sha256:ac4ef17209bd831565f25ea9a787315ad129dd8f40c115edbf32c629fe9679ae
     healthcheck:
       test: ["CMD-SHELL", "nc -z 127.0.0.1 6806 || exit 1"]
       interval: 10s
