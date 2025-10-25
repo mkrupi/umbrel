@@ -1,6 +1,6 @@
 manifestVersion: 1
 id: mkrupi-onlyoffice
 name: onlyoffice
-category: mkrupistore
+category: files & productivity
 port: 11985
 icon: https://raw.githubusercontent.com/mkrupi/umbrel/master/mkrupi-onlyoffice/icon.svg
