@@ -4,7 +4,6 @@ name: SiYuan
 tagline: A privacy-first personal knowledge management system
 icon: https://raw.githubusercontent.com/mkrupi/umbrel/master/mkrupi-siyuan/icon.png
 category: files & productivity
-version: "3.1.28"
 port: 6806
 description: >-
   📚 SiYuan is a powerful and privacy-focused personal knowledge management (PKM) system designed for users who value full control over their data. Unlike many mainstream note-taking applications that rely heavily on cloud storage and online access, SiYuan is built around the principle of local-first data storage and offline accessibility. At its core, it employs a block-based editor, which allows users to structure and interconnect their content in a highly flexible and modular way. This approach supports fine-grained referencing and bi-directional linking between blocks, encouraging users to build rich, interrelated knowledge graphs.
@@ -29,10 +28,7 @@ gallery:
   - https://i.imgur.com/FKVMtg5.png
   - https://i.imgur.com/537xuWL.png
 releaseNotes: >-
-  This SiYuan update delivers various usability improvements and bug fixes, particularly enhancing tag handling, table editing, web clipping, and PDF exports. It also improves the user experience on Android and introduces better synchronization and search behavior. 
-  
-  
-  Additionally, the software has been upgraded to Electron v34.5.0 and includes refinements to its internal API and plugin system.
+
 dependencies:
 path: ""
 defaultUsername: ""
