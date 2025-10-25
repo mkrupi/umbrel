@@ -12,8 +12,8 @@ website: https://www.onlyoffice.com/
 repo: https://github.com/ONLYOFFICE/DocumentServer
 support: https://forum.onlyoffice.com/
 gallery:
-  - 1.jpg
-  - 2.jpg
-  - 3.jpg
-  - 4.jpg
-  - 5.jpg
+  - https://raw.githubusercontent.com/mkrupi/umbrel/master/mkrupi-onlyoffice/1.webp
+  - https://raw.githubusercontent.com/mkrupi/umbrel/master/mkrupi-onlyoffice/2.webp
+  - https://raw.githubusercontent.com/mkrupi/umbrel/master/mkrupi-onlyoffice/3.webp
+  - https://raw.githubusercontent.com/mkrupi/umbrel/master/mkrupi-onlyoffice/4.webp
+  - https://raw.githubusercontent.com/mkrupi/umbrel/master/mkrupi-onlyoffice/5.webp
