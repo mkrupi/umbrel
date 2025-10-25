@@ -23,10 +23,10 @@ submission: https://github.com/getumbrel/umbrel-apps/pull/
 repo: https://github.com/siyuan-note/siyuan
 support: https://github.com/siyuan-note/siyuan/issues
 gallery:
-  - 1.png
-  - 2.png
-  - 3.png
-  - 4.png
+  - https://raw.githubusercontent.com/mkrupi/umbrel/master/mkrupi-siyuan/1.png
+  - https://raw.githubusercontent.com/mkrupi/umbrel/master/mkrupi-siyuan/2.png
+  - https://raw.githubusercontent.com/mkrupi/umbrel/master/mkrupi-siyuan/3.png
+  - https://raw.githubusercontent.com/mkrupi/umbrel/master/mkrupi-siyuan/4.png
 releaseNotes: >-
 
 dependencies:
