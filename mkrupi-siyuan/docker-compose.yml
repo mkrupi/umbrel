@@ -1,23 +1,22 @@
-version: '3.7'
-
 services:
-  app_proxy:
-    environment:
-      APP_HOST: mkrupi-siyuan_app_1
-      APP_PORT: 6806
-      PROXY_AUTH_ADD: "false"
-
   app:
-    image: b3log/siyuan:latest
+    image: b3log/siyuan:3.3.4@sha256:f83d07e1ebf00ba00a9e86876594a607e9b6833d770330df7b0ee29a415e8a1d
+    ports:
+      - '6806:6806'
     healthcheck:
-      test: ["CMD-SHELL", "nc -z 127.0.0.1 6806 || exit 1"]
+      test:
+        - CMD-SHELL
+        - nc -z 127.0.0.1 6806 || exit 1
       interval: 10s
       timeout: 5s
       retries: 3
       start_period: 90s
-    command: ['--workspace=/siyuan/workspace/', '--accessAuthCode=umbrel']
+    command:
+      - '--workspace=/siyuan/workspace/'
+      - '--accessAuthCode=rT*20z0L4Ptw'
     security_opt:
       - no-new-privileges:true
     restart: on-failure
     volumes:
       - ${APP_DATA_DIR}/data:/siyuan/workspace:rw
+    container_name: mkrupi-siyuan_app_1
