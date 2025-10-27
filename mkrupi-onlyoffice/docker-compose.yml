@@ -19,5 +19,5 @@ services:
       - JWT_IN_BODY=true
    app_proxy:
      environment:
-      APP_HOST: mkrupi-onlyoffice_app_1
-      APP_PORT: "80"
+       APP_HOST: mkrupi-onlyoffice_app_1
+       APP_PORT: "80"
