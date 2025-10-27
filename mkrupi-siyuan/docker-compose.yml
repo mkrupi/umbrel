@@ -1,6 +1,6 @@
 services:
   app:
-    image: b3log/siyuan:3.3.5@sha256:f83d07e1ebf00ba00a9e86876594a607e9b6833d770330df7b0ee29a415e8a1d
+    image: b3log/siyuan:3.3.5
     ports:
       - '6806:6806'
     healthcheck:
