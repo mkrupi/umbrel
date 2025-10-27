@@ -1,19 +1,23 @@
 services:
   app:
-    image: onlyoffice/documentserver:latest
+    image: onlyoffice/documentserver:9.1.0
     container_name: onlyoffice-docs
     restart: unless-stopped
     stdin_open: true
     tty: true
-    ports:
-      - 11985:80
     volumes:
-      - "${APP_DATA_DIR}/Docs/logs:/var/log/onlyoffice"
-      - "${APP_DATA_DIR}/Docs/data:/var/www/onlyoffice/Data"
-      - "${APP_DATA_DIR}/Docs/lib:/var/lib/onlyoffice"
-      - "${APP_DATA_DIR}/Docs/db:/var/lib/postgresql"
+      - ${APP_DATA_DIR}/onlyoffice/logs:/var/log/onlyoffice
+      - ${APP_DATA_DIR}/onlyoffice/data:/var/www/onlyoffice/Data
+      - ${APP_DATA_DIR}/onlyoffice/lib:/var/lib/onlyoffice
+      - ${APP_DATA_DIR}/onlyoffice/rabbitmq:/var/lib/rabbitmq
+      - ${APP_DATA_DIR}/onlyoffice/redis:/var/lib/redis
+      - ${APP_DATA_DIR}/onlyoffice/db:/var/lib/postgresql
     environment:
       - JWT_ENABLED=true
       - JWT_SECRET=b5GlQDw9yb2L1ez9
       - JWT_HEADER=Authorization
       - JWT_IN_BODY=true
+   app_proxy:
+     environment:
+      APP_HOST: mkrupi-onlyoffice_app_1
+      APP_PORT: "80"
