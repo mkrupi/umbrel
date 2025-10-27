@@ -1,4 +1,3 @@
-version: "3.7"
 services:
   app:
     image: onlyoffice/documentserver:9.1.0
@@ -6,6 +5,8 @@ services:
     restart: unless-stopped
     stdin_open: true
     tty: true
+    ports:
+      - 11985:80
     volumes:
       - ${APP_DATA_DIR}/onlyoffice/logs:/var/log/onlyoffice
       - ${APP_DATA_DIR}/onlyoffice/data:/var/www/onlyoffice/Data
@@ -18,7 +19,3 @@ services:
       - JWT_SECRET=b5GlQDw9yb2L1ez9
       - JWT_HEADER=Authorization
       - JWT_IN_BODY=true
-   app_proxy:
-     environment:
-       APP_HOST: mkrupi-onlyoffice_app_1
-       APP_PORT: "80"
