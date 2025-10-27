@@ -1,3 +1,4 @@
+version: "3.7"
 services:
   app:
     image: onlyoffice/documentserver:9.1.0
